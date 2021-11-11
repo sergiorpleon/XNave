@@ -29,9 +29,11 @@ public class PantallaJuego extends Pantalla {
 		super(juego);
 		mundo = new Mundo();
 
+		if(Configuraciones.soundEnabled){
 		mp = MediaPlayer.create(juego.getContext(), R.raw.musica);
 		mp.setLooping(true);
 		mp.setVolume(Configuraciones.musicLevel, Configuraciones.musicLevel);
+		}
 	}
 
 	public void updateReady(List<TouchEvent> touchEvents) {
