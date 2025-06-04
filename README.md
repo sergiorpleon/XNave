@@ -1,2 +1,2 @@
 # XNave
-Game
+Juego desarrollado en Eclipse para dispositivos Android.
